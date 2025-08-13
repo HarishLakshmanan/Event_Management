@@ -3,7 +3,6 @@ const { Schema } = mongoose;
 
 const EventSchema = new Schema({
   title: { type: String, required: true },
-  description: String,
   date: { type: Date, required: true },
   capacity: { type: Number, required: true, min: 1 },
   location: String,
